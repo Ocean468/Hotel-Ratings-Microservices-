@@ -1,31 +1,21 @@
 # Microservices Project
-This repository contains a comprehensive microservice-based backend solution for a hotel service application, developed using Spring Boot. The project consists of three microservices - UserService, HotelService, and RatingService, along with essential components like API Gateway, Config Server, Discovery Client, Service Registry, Feign Client, Resilience4j Circuit Breaker, Retry Mechanism, Rate Limiter, and Spring Security with Okta. All endpoints have been thoroughly tested using Postman for reliability and functionality.
+This GitHub repository encompasses an extensive microservices-based backend solution for a hotel service application, meticulously crafted using the Spring Boot framework. The project is comprised of three distinct microservices: UserService, HotelService, and RatingService. Additionally, it integrates crucial components such as API Gateway, Config Server, Discovery Client, Service Registry, Feign Client, Resilience4j Circuit Breaker, Retry Mechanism, Rate Limiter, and Spring Security with Okta. To ensure reliability and functionality, all endpoints have undergone rigorous testing using Postman.
 
 # Microservices
-- UserService: The UserService microservice handles user-related operations, including user registration and user profile management.
-- HotelService: The HotelService microservice is responsible for managing hotel-related functionalities.
-- RatingService: The RatingService microservice enables users to submit and retrieve hotel ratings and reviews.
+- UserService: Responsible for managing user-related operations, including user registration and user profile management.
+- HotelService: Handles the various functionalities associated with hotels, ensuring efficient management.
+- RatingService: Facilitates the submission and retrieval of hotel ratings and reviews by users.
 
-# Components : 
-The project incorporates the following components to enhance its functionality:
+# Components
+The project leverages several components to augment its functionality:
 
-- API Gateway: The API Gateway acts as a single entry point for all client requests and efficiently routes them to the respective microservices.
-- Config Server (GitHub): The Config Server centralizes the configuration management for all the microservices and retrieves configurations from a GitHub repository, making it easier to manage and modify configurations.
-- Discovery Client: The Discovery Client allows microservices to discover and communicate with each other without hardcoding service locations.
-- Service Registry (Spring Eureka): The Service Registry, powered by Spring Eureka, allows microservices to register themselves and enables service discovery.
-- Feign Client (Spring Cloud Routing): The Feign Client provides a declarative way to make API calls to other microservices, simplifying inter-service communication.
-- Netflix Eureka Client (Spring Cloud): The Netflix Eureka Client is used to register microservices with the Eureka Service Registry for service discovery.
-- Resilience4j Circuit Breaker: The Resilience4j Circuit Breaker pattern helps in preventing cascading failures by providing fault tolerance when calling remote services.
-- Retry Mechanism: The Retry mechanism is employed to automatically retry failed requests, improving the overall reliability of the system.
-- Rate Limiter: The Rate Limiter controls the rate of incoming requests to prevent overloading the microservices.
-- Spring Security with Okta: Spring Security is integrated with Okta to handle authentication and authorization, ensuring secure access to the microservices.
-
-<img width="960" alt="Screenshot 2023-07-24 180602" src="https://github.com/sanyam40/MicroServices/assets/87993985/2de31966-b4b7-495d-985a-cd0a9a4850a2">
-<img width="960" alt="Screenshot 2023-07-24 180628" src="https://github.com/sanyam40/MicroServices/assets/87993985/145b41bc-4584-4653-964b-602fd0304a0b">
-
-  
-  
-  
-
-
-
+- API Gateway: Serves as a centralized entry point for all client requests, efficiently directing them to the respective microservices.
+- Config Server (GitHub): Centralizes configuration management, retrieving configurations from a GitHub repository to simplify the management and modification of settings.
+- Discovery Client: Allows microservices to dynamically discover and communicate with each other, eliminating the need for hardcoding service locations.
+- Service Registry (Spring Eureka): Employs Spring Eureka to enable microservices to register themselves and facilitates service discovery.
+- Feign Client (Spring Cloud Routing): Provides a declarative approach to API calls between microservices, streamlining inter-service communication.
+- Netflix Eureka Client (Spring Cloud): Utilized for registering microservices with the Eureka Service Registry, enhancing service discovery capabilities.
+- Resilience4j Circuit Breaker: Implements the Resilience4j Circuit Breaker pattern to prevent cascading failures and enhance fault tolerance during remote service calls.
+- Retry Mechanism: Automates the retrying of failed requests, bolstering the overall reliability of the system.
+- Rate Limiter: Controls the rate of incoming requests to prevent overloading the microservices.
+- Spring Security with Okta: Integrates Spring Security with Okta for robust authentication and authorization, ensuring secure access to the microservices.
